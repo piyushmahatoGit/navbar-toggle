@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin:0;
+    Padding:0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 50px;
+    background-color: rgb(135, 154, 171);
+}
+.nav-center, .dropdown-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    background-color: rgb(0, 0, 0);
+    font-family:Jost;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    padding: 1px 15px;
+    border-radius: 30px;
+    
+}
+.nav-logo:hover{
+    cursor: pointer;
+}
+.nav-list, .social-media-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: jost;
+}
+li{
+    margin: 10px;
+}
+li:hover{
+    color:rgb(38, 128, 255);
+    cursor: pointer;
+}
+.social-media-links li:hover{
+    color:rgb(255, 0, 0);
+}
+.toogle{
+    display: none;
+}
+
+.show li:hover{
+    color: black;
+    background-color: rgb(236, 243, 249);
+}
+
+#toogle-icon:hover{
+    color: rgb(255, 255, 255);
+}
+ 
+.dropdown-nav-list{
+    display: none;
+}
+.show{
+    visibility: visible;
+    overflow: auto;
+}
+
+
+@media only screen and (max-width: 670px) {
+    *{
+        margin:0;
+        Padding:0;
+        box-sizing: border-box;
+    }
+    .nav-center{
+        width: 80%;
+    }
+    .nav-list li, .social-media-links li{
+        display: none;
+    }
+    .toogle{
+        display: inline;
+        font-size: 25px;
+    }
+    .show{
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        width: 100%;
+        color: black;
+        font-family: Jost;
+        list-style: none;
+        font-weight: 500;
+        background-color: aliceblue;
+        
+    }  
+    .show li{
+        padding-left: 10%;
+        background-color: rgb(214, 220, 232);
+        margin: 0;
+        height: 35px;
+        display: flex;
+        align-items: center;
+    }
+    .show:hover{
+        background-color: rgb(233, 242, 250);
+        color: black;
+    }
+   
+    
+    
+}
+
+
+
